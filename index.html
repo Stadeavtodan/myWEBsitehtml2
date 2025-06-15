@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<style type="text/css">
+		*, head, body{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		.header{
+			width: 100%;
+			height: 10vh;
+			background-color: blanchedalmond;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 0 40px;
+		}
+		.ulList{
+			list-style: none;
+			display: flex;
+			gap:  20px;
+		}
+		.photoDiv{
+			width: 100%;
+			height: 95vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			position: relative;
+		}
+		.transparentDiv{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			background-color: rgba(0, 0, 0, 0.4);
+			padding: 5%;
+			border-radius: 10px;
+			text-align: center;
+			color: white;
+		}
+	</style>
+</head>
+<body>
+	<div class="header">
+		<h3>School №3</h3>
+		<ul class="ulList">
+			<li><b>Main</b></li>
+			<li>About</li>
+			<li>News</li>
+			<li>Gallery</li>
+			<li>Contacts</li>
+		</ul>
+	</div>
+	
+	<div class="photoDiv">
+		<img src="./img/1.png" style="width: 90%; height: 95%;">
+		<div class="transparentDiv">
+			<h1><b>Welcome to school!</b></h1>
+		</div>
+	</div>
+</body>
+</html>
