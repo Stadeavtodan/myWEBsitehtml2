@@ -43,6 +43,46 @@
 			border-radius: 10px;
 			text-align: center;
 			color: white;
+			animation: fadeInScale 1.5s ease-out;
+		}
+		@keyframes fadeInScale {
+			0%{
+				opacity: 0;
+				transform: translate(-50%, -50%) scale(0.8);
+			}
+			100%{
+				opacity: 1;
+				transform: translate(-50%, -50%) scale(1);
+			}
+		}
+
+		.infoSection{
+			width: 100%;
+			padding: 40px;
+			background-color: #f8f8f8;
+			text-align: center;
+		}
+		.infoSection h2{
+			font-size: 2em;
+			margin-bottom: 20px;
+			color: #333;
+		}
+		.infoSection p {
+			font-size: 1.1em;
+			margin-bottom: 30px;
+			color: #555;
+			max-width: 800px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.infoSection ul{
+			list-style: none;
+			padding: 0;
+		}
+		.infoSection li {
+			font-size: 1.1em;
+			margin-bottom: 10px;
+			color: #333;
 		}
 	</style>
 </head>
@@ -63,6 +103,19 @@
 		<div class="transparentDiv">
 			<h1><b>Welcome to school!</b></h1>
 		</div>
+	</div>
+
+	
+
+	<div class="infoSection">
+		<h2>About Our School</h2>
+		<p>School №3 is a place where students grow, learn, and thrive. With modern classrooms, experienced teachers, and a strong focus on creativity and critical thinking, we aim to prepare every student for a successful future.</p>
+		<ul>
+			<li>✔️ Over 500 happy students</li>
+			<li>✔️ Qualified and friendly teachers</li>
+			<li>✔️ Clubs, sports, and arts</li>
+			<li>✔️ Safe and inclusive environment</li>
+		</ul>
 	</div>
 </body>
 </html>
